@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarColor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startTrainingBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:text="@string/text_start_training_BTN"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarTraining" />
+
+    <TextView
+        android:id="@+id/timerTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:text="@string/text_time_TV"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/startTrainingBTN" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/trainingGifIV"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/_300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backTrainingBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:text="@string/text_back_BTN"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:hint="@string/text_description_TV"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintTop_toBottomOf="@+id/trainingGifIV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

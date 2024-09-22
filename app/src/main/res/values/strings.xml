@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyTrainingSession</string>
+    <string name="exit">Выход</string>
+    <string name="text_start_BTN">Выбор тренировки</string>
+    <string name="text_info_TV">Фитнес — это не хобби. Это образ жизни!</string>
+    <string name="text_back_BTN">Вернуться к выбору тренировки</string>
+    <string name="text_time_TV">Оставшееся время</string>
+    <string name="text_start_training_BTN">Начать тренировку</string>
+    <string name="text_name_training_TV">Название упражнения</string>
+    <string name="text_description_TV">Описание</string>
+</resources>
